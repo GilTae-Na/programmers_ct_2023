@@ -13,13 +13,13 @@ public class Tests {
     }
 
     @Test
-    @DisplayName("91도 입력시 결과 는 1")
+    @DisplayName("90도 입력시 결과 는 2")
     void t2(){
-        assertThat(new Solution().solution(91)).isEqualTo(3);
+        assertThat(new Solution().solution(90)).isEqualTo(2);
     }
 
     @Test
-    @DisplayName("92도 입력시 결과 는 1")
+    @DisplayName("92도 입력시 결과 는 3")
     void t3(){
         assertThat(new Solution().solution(92)).isEqualTo(3);
     }
@@ -32,7 +32,13 @@ public class Tests {
 
     @Test
     @DisplayName("190도 입력시 결과 는 4")
+    void t6(){
+        assertThat(new Solution().solution(190)).isEqualTo(3);
+    }
+
+    @Test
+    @DisplayName("50도 입력시 결과 는 1")
     void t5(){
-        assertThat(new Solution().solution(90)).isEqualTo(2);
+        assertThat(new Solution().solution(50)).isEqualTo(1);
     }
 }
