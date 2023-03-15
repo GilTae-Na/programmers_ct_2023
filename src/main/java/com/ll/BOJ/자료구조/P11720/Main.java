@@ -1,4 +1,4 @@
-package com.ll.BOJ.P11720;
+package com.ll.BOJ.자료구조.P11720;
 
 import java.util.Scanner;
 

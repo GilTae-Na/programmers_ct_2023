@@ -1,4 +1,4 @@
-package com.ll.BOJ.P1546;
+package com.ll.BOJ.자료구조.P1546;
 
 import java.util.Arrays;
 import java.util.Scanner;
