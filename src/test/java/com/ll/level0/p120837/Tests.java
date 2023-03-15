@@ -3,32 +3,29 @@ package com.ll.level0.p120837;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class Tests {
-
     @Test
-    @DisplayName("23=> 5")
-    void t1(){
-        assertThat(new Solution().solution(23)).isEqualTo(5);
+    @DisplayName("\"3 + 3 = 6")
+    public void getSplitInfo() {
+        assertEquals(6, new Polynomial("3 + 3").calc());
     }
 
     @Test
-    @DisplayName("26=>6")
-    void t2(){
-        assertThat(new Solution().solution(26)).isEqualTo(6);
+    public void getSplitInfo_3() {
+        assertEquals(15, new Polynomial("13 + 2").calc());
     }
 
-    @Test
-    @DisplayName("999=>201")
-    void t3(){
-        assertThat(new Solution().solution(999)).isEqualTo(201);
-    }
 
-    @Test
-    @DisplayName("552=>112")
-    void t4(){
-        assertThat(new Solution().solution(552)).isEqualTo(112);
-    }
-
+//    @Test
+//    public void getSplitInfo_3() {
+//        assertEquals(12, new Polynomial("3 * 3 + 3").calc());
+//    }
+//
+//    @Test
+//    public void getSplitInfo_4() {
+//        assertEquals(18, new Polynomial("(3 + 3) * 3").calc());
+//    }
 }
